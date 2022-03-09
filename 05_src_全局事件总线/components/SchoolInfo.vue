@@ -26,6 +26,9 @@ export default {
   },
   mounted() {
     this.$bus.$on('studentName', this.getName);
+  },
+  beforeDestroy() {
+    this.$bus.$off('studentName');
   }
 }
 </script>
