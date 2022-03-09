@@ -57,7 +57,10 @@ export default {
     this.$bus.$on('clearTask', this.clearTask);
   },
   beforeDestroy() {
-
+    this.$bus.$off('checkChange');
+    this.$bus.$off('deleteItemById');
+    this.$bus.$off('checkAll');
+    this.$bus.$off('clearTask');
   }
 }
 </script>
