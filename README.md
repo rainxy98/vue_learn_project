@@ -1,5 +1,6 @@
 # vue_learn_project
 
+#把上方src_xxx里面的案例拷贝到src目录下
 ## Project setup
 ```
 npm install
